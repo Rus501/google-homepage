@@ -5,9 +5,9 @@ body {
 }
 #navigation {
     display: flex;
-    justify-content: right;
+    justify-content: flex-end;
     align-items: center;
-    margin: 10px;
+    list-style-type: none;
 }
 #navigation a {
     color: #000;
