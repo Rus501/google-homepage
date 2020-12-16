@@ -8,10 +8,11 @@ body {
     justify-content: flex-end;
     align-items: center;
     list-style-type: none;
+    padding: 0 20px;
 }
 #navigation a {
     color: #000;
-    margin: 5px;
+    margin-left: 10px;
     font-size: 14px;
     text-decoration: none;
 }
@@ -19,11 +20,17 @@ body {
     text-decoration: underline;
 }
 .nav-button {
-    width: 20px;
-    height: 20px;
-    margin: 0 5px;
+    width: 30px;
+    height: 30px;
+    margin-left: 5px;
     /*box-sizing: border-box;*/
-    background: #000;
+    background-image: url('//ssl.gstatic.com/gb/images/i1_1967ca6a.png');
+    background-position: -132px -38px;
+}
+.nav-button a {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
 }
 .pfp {
     width: 30px;
@@ -46,14 +53,36 @@ body {
     align-items: center;
     flex: 1;
 }
-#search_box {
+.search_div {
     width: 400px;
     margin: 30px;
     border-radius: 24px;
     border: 1px solid #dfe1e5;
     height: 44px;
     box-sizing: border-box;
-    padding: 5px 20px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+}
+#search_box:focus {
+    outline: none!important;
+    box-shadow: 0 0 10px #719ECE;
+}
+.search_icon {
+    height: 20px;
+    width: 20px;
+    position: absolute;
+    margin-left: 15px;
+}
+#search_box {
+    width: 400px;
+    border: 1px solid #dfe1e5;
+    padding: 0 20px 0 40px;
+    border-radius: 24px;
+    border: none;
+    outline: none;
+    width: 100%;
+    height: 100%;
 }
 #search_form {
     display: flex;
@@ -61,7 +90,8 @@ body {
     flex-direction: column;
     align-items: center;
 }
-#search_button, #search_button2 {
+#search_button, 
+#search_button2 {
     margin: 11px 4px;
     height: 36px;
     background-color: #f8f9fa;
@@ -71,6 +101,11 @@ body {
     padding: 0 16px;
     cursor: pointer;
     color: #3c4043;
+    transition: box-shadow 0.4s;
+}
+#search_button:hover, 
+#search_button2:hover {
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
 }
 .text {
     font-size: 14px;
@@ -83,10 +118,6 @@ body {
     box-sizing: border-box;
     border-top: 1px solid #dadce0;
 }
-#footer span {
-    padding: 15px;
-    display: block;
-}
 #footer a {
     color: #70757a;
     text-decoration: none;
@@ -97,4 +128,23 @@ body {
     flex-direction: row;
     justify-content: space-between;
     padding: 15px;
+}
+.footer_flex a {
+    position: relative;
+}
+.footer_flex a:after {
+    content: '';
+    width: 0;
+    height: 1px;
+    background: #70757a;
+    position: absolute;
+    display: block;
+    right: 0;
+    margin-top: 3px;
+    transition: width 0.2s ease;
+    -webkit-transition: width 0.2s ease;
+}
+.footer_flex a:hover:after {
+    width: 100%;
+    left: 0;
 }

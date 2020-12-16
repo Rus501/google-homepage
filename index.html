@@ -11,7 +11,7 @@
             <ul id="navigation">
                 <li><a href="#">Gmail</a></li>
                 <li><a href="#">Images</a></li>
-                <li><a class="nav-button" href="#"></a></li>
+                <li class="nav-button"><a href="#"></a></li>
                 <li><a href="#"><div class="pfp"></div></a></li>
             </ul>
         </header>
@@ -19,32 +19,35 @@
             <img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google logo">
             <form id="search_form" action="">
                 <label for="search_box">
-                    <input type="text" name="search_box" id="search_box">
-                </label>
+                    <div class="search_div">
+                        <input type="text" name="search_box" id="search_box">
+                        <svg class="search_icon" focusable="false" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M15.5 14h-.79l-.28-.27A6.471 6.471 0 0 0 16 9.5 6.5 6.5 0 1 0 9.5 16c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L20.49 19l-4.99-5zm-6 0C7.01 14 5 11.99 5 9.5S7.01 5 9.5 5 14 7.01 14 9.5 11.99 14 9.5 14z"></path></svg>
+                    </div>
+                    </label>
                 <div class="buttons">
                 <label for="search_button">
-                    <input type="button" name="search_button" id="search_button" label="Google Search" value="Google Search">
+                    <button type="button" name="search_button" id="search_button" label="Google Search">Google Search</button>
                 </label>
                 <label for="search_button2">
-                    <input type="button" name="search_button2" id="search_button" label="I'm feeling lucky" value="I'm feeling lucky">
+                    <button type="button" name="search_button2" id="search_button" label="I'm feeling lucky">I'm feeling lucky</button>
                 </label>
                 </div>
             </form>
-            <p class="text">Google offered in: <a href="#">русский</a></p>
+            <p class="text">Google offered in: <a href="#">language</a></p>
         </main>
         <footer id="footer">
             <div class="footer_flex">
-            <nav>
-                <a href="#">Advertising</a>
-                <a href="#">Business</a>
-                <a href="#">About</a>
-                <a href="#">How Search works</a>
-            </nav>
-            <nav>
-                <a href="#">Privacy</a>
-                <a href="#">Terms</a>
-                <a href="#">Settings</a>
-            </nav>
+                <nav>
+                    <a href="#">Advertising</a>
+                    <a href="#">Business</a>
+                    <a href="#">About</a>
+                    <a href="#">How Search works</a>
+                </nav>
+                <nav>
+                    <a href="#">Privacy</a>
+                    <a href="#">Terms</a>
+                    <a href="#">Settings</a>
+                </nav>
             </div>
         </footer>
         </div>
