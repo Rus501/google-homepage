@@ -1,1 +1,1 @@
-My first work from The Odin Project
+First project from The Odin Project https://www.theodinproject.com/
